@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddd;
+    min-height: 100vh;
+}
+
+ main{
+    display: flex;  
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1rem;
+
+}
+main h1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.inputs{
+    width: 60%;
+    display: flex;
+    align-items: center ;
+    justify-content: stretch;
+    border: 2px solid #af0101;
+    border-bottom: 0 solid transparent;
+    background-color: #1155cc;
+    padding: .2rem 0;
+}
+
+.inputs input {
+    height: 2rem;
+    color: #115522;
+    background-color: #f2a921;
+    border-radius: 0.rem;
+    margin: .2rem 0.2rem 0 0.1rem;
+    padding: 0.1rem 1rem;
+    font-weight: 900;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.inputs input::placeholder{
+    color: #fff;
+}
+.inputs input:hover{
+    background-color: #999;
+    color: rgb(252, 227, 0);
+    transition: background-color 1s;
+}
+
+.inputs button{
+    display: flex;
+    margin-left: 1rem;
+    background-color: rgb(22, 234, 58);
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 2rem;
+    border: 0.2rem solid #f2a921;
+    border-radius: 2rem;
+    font-weight: 400;
+    }
+.inputs button:hover{
+    background-color: #669966;
+    color: #f3F9F9;
+    transition: background-color .5s;
+}
+table{
+    width: 50rem;
+    max-width: 100%;  
+    border: 2px solid #af0101; 
+    background-color: rgb(228, 216, 129);
+}
+
+table th{
+    /* max-width: 90%; */
+    color: #ddd;
+    background-color: #1155cc;
+    border: 2px solid black;
+    margin: 0;
+    padding: 0.2rem 0.3rem;
+    
+}
+
+table td:nth-child(-n + 3){
+    
+    padding: 0 0.4rem;
+    border: 2px solid black;
+    background-color: #1ebb09 ;
+    color: #222;
+    font-weight: 700;
+}
+
+.delete{
+    width: 100%;
+    height: 2rem;
+    background-color: #a20000;
+    color: #fff;
+    font-size: larger;
+}
+.delete:hover{
+    background-color: #4b1616;
+    transition: background-color 1s;
+    border: 1px solid rgb(255, 0, 221);
+}
